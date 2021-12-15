@@ -8,3 +8,17 @@ header {
   align-items: center;
   justify-content: space-evenly;
 }
+.friendCard {
+  height: 35%;
+  width: 25%;
+  margin: 3% 2%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: dodgerblue;
+}
+.calledFriend {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}

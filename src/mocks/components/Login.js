@@ -5,11 +5,12 @@ import { useHistory } from 'react-router-dom';
 export default function Login() {
     const { push } = useHistory();
     const [credentials, setCredentials] = useState({
-        username: 'Bloom',
-        password: 'Tech'
+        username: '',
+        password: ''
     })
 
     const handleChange = (e) => {
+        console.log(e)
         setCredentials({
             ...credentials,
             [e.target.name]: e.target.value
@@ -38,7 +39,7 @@ export default function Login() {
                         input='text'
                         id='username'
                         name='username'
-                        handleChange={handleChange}
+                        onChange={handleChange}
                     >
                     </input>
                 </label>
@@ -48,7 +49,7 @@ export default function Login() {
                         input='text'
                         id='password'
                         name='password'
-                        handleChange={handleChange}
+                        onChange={handleChange}
                     >
                     </input>
                 </label>
